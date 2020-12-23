@@ -1,6 +1,7 @@
 :root {
 	--black: #000000
 	--bpurple: #541f5c;
+	--gray: #919192;
 }
 
 * {
@@ -41,28 +42,16 @@ html {
 .main__relax {
 	height: auto;
 }
-.header__logo {
+.header__logo, .header__nav {
 	background-color: #fffcf8;
 }
-.header__nav {
-	background-color: #fffcf8;
-}
-.main__philosophy__text {
+.main__philosophy__text, .main__philosophy__turn {
 	background-color: #7a5675;
 }
-.main__philosophy__turn {
-	background-color: #7a5675;
-}
-.main__esthetic {
+.main__esthetic, .main__relax {
 	background-color: #ffffff;
 }
-.main__relax {
-	background-color: #ffffff;
-}
-.footer__logo {
-	background-color: #fffcf8;
-}
-.footer__contact {
+.footer__logo, .footer__contact {
 	background-color: #fffcf8;
 }
 /* ::::::::::::::::::::::: HEADER :::::::::::::::::::::::  */
@@ -89,6 +78,11 @@ html {
 	align-items: center;
 	justify-content: center;
 	flex-direction: column;
+}
+hr {
+	width: 18rem;
+	border-color: 1rem solid var(--gray);
+	margin-bottom: 1rem;
 }
 .header__logo__dedicarte {
 	font-family: "Parisienne", cursive;
