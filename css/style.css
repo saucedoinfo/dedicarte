@@ -67,17 +67,23 @@ html {
 }
 /* ::::::::::::::::::::::: HEADER :::::::::::::::::::::::  */
 .header__logo{
+	width: 100%;
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	flex-wrap: wrap;
 	gap: 1rem;
-	width: 100%;
 	height: auto;
 	padding: 2rem;
 }
-.header__logo__img{	
-	outline: 2px solid red;}
+.header__logo__container{
+	width: 100%;
+	display: inherit;
+	justify-content: center;
+}
+.header__logo__img{
+	width: 186px;
+}
 .header__logo__text{
 	display: flex;
 	align-items: center;
@@ -92,5 +98,5 @@ html {
 .header__logoestetica_relax{
 	font-family: 'Open Sans', sans-serif;
 	font-size: 2rem;
-	letter-spacing: 3px
+	letter-spacing: 3px;
 }
