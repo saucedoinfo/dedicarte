@@ -13,7 +13,7 @@
 	<link rel="preconnect" href="https://fonts.gstatic.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com">
 	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
-
+	<script>alert(window.FontAwesome.config)</script>
 	<title>Dedicarte | Estética y relax</title>
 </head>
 
@@ -24,7 +24,7 @@
 					alt="Logo de la web Dedicarte"></picture>
 			<div class="header__logo__text">
 				<p class="header__logo__dedicarte">Dedicarte</p>
-				<hr>
+				<div class="line"></div>
 				<p class="header__logoestetica_relax">Estética y relax</p>
 			</div>
 
@@ -43,23 +43,26 @@
 	<main class="main">
 		<section class="main__philosophy">
 			<div class="main__philosophy__text">
-				<h1>Belleza, salud, confort y bienestar en un solo lugar</h1>
+				<h1 class="h1">Belleza, salud, confort y bienestar en un solo lugar</h1>
 				<p>Dedicarte es un espacio pensado y creado para el cuidado de
 					la salud y la belleza de todos aquillas personas que saben que
 					el cuidado integral es la base para una mejor calidad de vida.
 				</p>
+			</div>
+			<div class="main__philosophy__turn">
 				<p>Estándares de calidad brindan confort y bienestar mediante
 					una creación personalizada con alto grado de responsabilidad
 					y compromiso profesional en cada tratamiento.
 				</p>
-			</div>
-			<div class="main__philosophy__turn">
-				<p>Reserva tu lugar</p>
-				<button type="button">Solicitar turno</button>
+				<button type="button" class="button">Solicitar turno</button>
 			</div>
 		</section>
 		<section class="main__esthetic">
-			<h2>Estética</h2>
+			<section class="main__esthetic__title">
+				<span class="line"></span>
+				<h2>Estética</h2>
+				<span class="line"></span>
+			</section>
 			<div>
 				<picture><img src="" alt=""></picture>
 				<h3>Estética facial</h3>
@@ -82,7 +85,11 @@
 			</div>
 		</section>
 		<section class="main__relax">
-			<h2>Relax</h2>
+			<section class="main__relax__title">
+				<span class="line"></span>
+				<h2>Relax</h2>
+				<span class="line"></span>
+			</section>
 			<div>
 				<picture><img src="" alt=""></picture>
 				<h3>Masajes reductores manuales</h3>

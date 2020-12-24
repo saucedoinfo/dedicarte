@@ -54,6 +54,14 @@ html {
 .main__relax {
 	background-color: var(--white);
 }
+/* ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
+.line {
+	border-top: 1px solid var(--gray);
+	height: 2px;
+	width: 100%;
+	padding: 0;
+	margin-bottom: 1rem;
+}
 /* ::::::::::::::::::::::: HEADER :::::::::::::::::::::::  */
 .header__logo {
 	width: 100%;
@@ -80,18 +88,20 @@ html {
 	justify-content: center;
 	flex-direction: column;
 }
-hr {
+/* hr {
 	width: 18rem;
 	border-color: 1rem solid var(--gray);
 	margin-bottom: 1rem;
-}
+} */
 .header__logo__dedicarte {
 	font-family: "Parisienne", cursive;
 	font-size: 5rem;
 	color: var(--black);
 }
 .header__logoestetica_relax,
-.header__nav {
+.header__nav,
+.main__esthetic__title > h2,
+.main__relax__title > h2 {
 	font-family: "Open Sans", sans-serif;
 	font-size: 2rem;
 	letter-spacing: 3px;
@@ -122,6 +132,9 @@ ul {
 	color: var(--white);
 }
 /* ::::::::::::::::::::::: MAIN :::::::::::::::::::::::  */
+.h1 {
+	font-size: 2.5rem;
+}
 .main__philosophy__text,
 .main__philosophy__turn {
 	height: auto;
@@ -129,7 +142,9 @@ ul {
 	flex-wrap: wrap;
 }
 .main__philosophy__text,
-.main__philosophy__text > p {
+.main__philosophy__turn,
+.main__philosophy__text > p,
+.main__philosophy__turn > p {
 	color: var(--cake);
 	font-family: "Open Sans", sans-serif;
 	font-size: 1.5rem;
@@ -138,21 +153,83 @@ ul {
 	padding-bottom: 2rem;
 	padding-left: 2rem;
 }
-.main__philosophy__text {
-	background-image: ;
-}
 .main__philosophy__turn {
-	padding: 2rem;
-	padding-top: 0;
-	text-align: center;
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	font-size: 3rem;
-	color: var(--cake);
 }
-/* .main__philosophy {
-	background-image: url("../img/Maenner-Wellness.jpg");
-	background-size: contain;
-	/* background-color: transparent; */
+.button {
+	display: inline-block;
+	border-radius: 50px;
+	background-color: #e782a0;
+	border: none;
+	color: #ffffff;
+	text-align: center;
+	font-family: "Open Sans", sans-serif;
+	font-size: 2rem;
+	padding: 1rem;
+	width: 200px;
+	transition: all 0.5s;
+	cursor: pointer;
+	margin: 5px;
+}
+/* .button span {
+	cursor: pointer;
+	display: inline-block;
+	position: relative;
+	transition: 0.5s;
+}
+.button span:after {
+	content: "f232";
+	position: absolute;
+	opacity: 0;
+	top: 0;
+	right: -20px;
+	transition: 0.5s;
+}
+.button:hover span {
+	padding-right: 25px;
+}
+.button:hover span:after {
+	opacity: 1;
+	right: 0;
 } */
+/* :::::::::::::::::::::::::::main__esthetic:::::::::::::::::::::::::::: */
+.main__esthetic,
+.main__relax {
+	width: 100%;
+	height: auto;
+	display: flex;
+	flex-wrap: wrap;
+	padding: 2rem;
+	font-family: "Open Sans", sans-serif;
+}
+.main__esthetic__title,
+.main__relax__title {
+	width: 100%;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+.main__esthetic__title > span,
+.main__relax__title > span {
+	border-top: 1px solid var(--bpurple);
+	height: 0;
+	width: 100%;
+}
+.main__esthetic__title > h2,
+.main__relax__title > h2 {
+	margin-left: 2rem;
+	margin-right: 2rem;
+	font-weight: 400;
+}
+.main__esthetic > div,
+.main__relax > div {
+	width: 50%;
+	outline: 1px solid red;
+	padding: 1rem;
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	gap: 1rem;
+}
