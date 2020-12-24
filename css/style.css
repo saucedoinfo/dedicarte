@@ -1,24 +1,21 @@
 :root {
-	--black: #000000
-	--white: #ffffff
+	--black: #000000;
+	--white: #ffffff;
 	--bpurple: #541f5c;
-	--lpurple: #7A5675;
+	--lpurple: #7a5675;
 	--gray: #919192;
 	--cake: #fffcf8;
 }
-
 * {
 	box-sizing: border-box;
 	margin: 0;
 	padding: 0;
 }
-
 html {
 	font-size: 62.5%;
 	background-color: black;
 	width: 100vw;
 }
-
 .container .header,
 .main,
 .main__philosophy,
@@ -28,7 +25,6 @@ html {
 	display: flex;
 	flex-wrap: wrap;
 }
-
 .header__logo,
 .header__nav,
 .main__philosophy__text,
@@ -45,18 +41,24 @@ html {
 .main__relax {
 	height: auto;
 }
-.header__logo, .header__nav,.footer__logo, .footer__contact {
+.header__logo,
+.header__nav,
+.footer__logo,
+.footer__contact {
 	background-color: var(--cake);
 }
-.main__philosophy__text, .main__philosophy__turn {
+.main__philosophy__text,
+.main__philosophy__turn {
 	background-color: var(--lpurple);
 }
-.main__esthetic, .main__relax {
+.main__esthetic,
+.main__relax {
 	background-color: var(--white);
 }
 /* ::::::::::::::::::::::: HEADER :::::::::::::::::::::::  */
-.header__logo{
+.header__logo {
 	width: 100%;
+	height: auto;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -65,15 +67,15 @@ html {
 	height: auto;
 	padding: 2rem;
 }
-.header__logo__container{
+.header__logo__container {
 	width: 100%;
 	display: inherit;
 	justify-content: center;
 }
-.header__logo__img{
+.header__logo__img {
 	width: 186px;
 }
-.header__logo__text{
+.header__logo__text {
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -89,9 +91,35 @@ hr {
 	font-size: 5rem;
 	color: var(--black);
 }
-.header__logoestetica_relax{
-	font-family: 'Open Sans', sans-serif;
+.header__logoestetica_relax,
+.header__nav {
+	font-family: "Open Sans", sans-serif;
 	font-size: 2rem;
 	letter-spacing: 3px;
 	color: var(--lpurple);
+	padding-bottom: 2rem;
+	height: auto;
 }
+.header__nav {
+	padding-left: 2rem;
+	padding-right: 2rem;
+	background-color: var(--white);
+}
+.header__nav__hr {
+	width: 100%;
+}
+ul {
+	display: flex;
+	flex-wrap: wrap;
+}
+.header__nav li {
+	display: inline;
+	padding: 1rem;
+	margin: auto;
+	color: var(--bpurple);
+}
+.header__nav li:hover {
+	background-color: var(--lpurple);
+	color: var(--white);
+}
+/* ::::::::::::::::::::::: MAIN :::::::::::::::::::::::  */
