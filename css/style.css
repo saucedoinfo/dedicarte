@@ -47,8 +47,7 @@ html {
 .footer__contact {
 	background-color: var(--cake);
 }
-.main__philosophy__text,
-.main__philosophy__turn {
+.main__philosophy {
 	background-color: var(--lpurple);
 }
 .main__esthetic,
@@ -123,3 +122,37 @@ ul {
 	color: var(--white);
 }
 /* ::::::::::::::::::::::: MAIN :::::::::::::::::::::::  */
+.main__philosophy__text,
+.main__philosophy__turn {
+	height: auto;
+	display: flex;
+	flex-wrap: wrap;
+}
+.main__philosophy__text,
+.main__philosophy__text > p {
+	color: var(--cake);
+	font-family: "Open Sans", sans-serif;
+	font-size: 1.5rem;
+	text-align: center;
+	padding-right: 2rem;
+	padding-bottom: 2rem;
+	padding-left: 2rem;
+}
+.main__philosophy__text {
+	background-image: ;
+}
+.main__philosophy__turn {
+	padding: 2rem;
+	padding-top: 0;
+	text-align: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 3rem;
+	color: var(--cake);
+}
+/* .main__philosophy {
+	background-image: url("../img/Maenner-Wellness.jpg");
+	background-size: contain;
+	/* background-color: transparent; */
+} */
