@@ -63,7 +63,8 @@ html {
 	margin-bottom: 1rem;
 }
 /* ::::::::::::::::::::::: HEADER :::::::::::::::::::::::  */
-.header__logo {
+.header__logo,
+.footer__logo {
 	width: 100%;
 	height: auto;
 	display: flex;
@@ -74,15 +75,18 @@ html {
 	height: auto;
 	padding: 2rem;
 }
-.header__logo__container {
+.header__logo__container,
+.footer__logo__container {
 	width: 100%;
 	display: inherit;
 	justify-content: center;
 }
-.header__logo__img {
+.header__logo__img,
+.footer__logo__img {
 	width: 186px;
 }
-.header__logo__text {
+.header__logo__text,
+.footer__logo__text {
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -93,12 +97,14 @@ html {
 	border-color: 1rem solid var(--gray);
 	margin-bottom: 1rem;
 } */
-.header__logo__dedicarte {
+.header__logo__dedicarte,
+.footer__logo__dedicarte {
 	font-family: "Parisienne", cursive;
 	font-size: 5rem;
 	color: var(--black);
 }
 .header__logoestetica_relax,
+.footer__logoestetica_relax,
 .header__nav,
 .main__esthetic__title > h2,
 .main__relax__title > h2 {
@@ -232,4 +238,40 @@ ul {
 	justify-content: center;
 	flex-wrap: wrap;
 	gap: 1rem;
+}
+/* :::::::::::::::::::::::: FOOTER :::::::::::::::::::::::::::::: */
+
+.footer {
+	width: 100%;
+}
+.footer__logo,
+.footer__contact {
+	width: 50%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: auto;
+}
+
+.footer__logo {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: nowrap;
+}
+.header__logo__container {
+	width: 50%;
+	height: auto;
+}
+.footer__logo__text {
+	width: 50%;
+}
+.footer__logo__img {
+	width: 60px;
+}
+.footer__logo__dedicarte {
+	font-size: 3rem;
+}
+.footer__logoestetica_relax {
+	font-size: 0.9rem;
 }
