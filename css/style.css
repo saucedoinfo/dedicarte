@@ -118,7 +118,6 @@ html {
 .header__nav {
 	padding-left: 2rem;
 	padding-right: 2rem;
-	background-color: var(--white);
 }
 .header__nav__hr {
 	width: 100%;
