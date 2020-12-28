@@ -1,5 +1,6 @@
 .header,
-.main__philosophy {
+.main__philosophy,
+.main__esthetic {
 	min-width: 768px;
 	max-width: 1023px;
 }

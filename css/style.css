@@ -134,6 +134,12 @@ header,
 
 /* ::::::::::::::::::::::: MAIN :::::::::::::::::::::::  */
 
+.main {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
 .main__philosofy__container {
 	background-color: var(--lpurple);
 	width: 100vw;
