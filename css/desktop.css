@@ -15,9 +15,15 @@
 	margin-bottom: 1rem;
 	font-size: 2.5rem;
 	width: auto;
-	padding: 2rem;
+	height: auto;
+	padding-left: 2rem;
+	padding-right: 2rem;
 }
 
 .main__philosophy > p {
 	padding: 2rem;
+}
+
+.main__esthetic__container > div {
+	width: 25%;
 }

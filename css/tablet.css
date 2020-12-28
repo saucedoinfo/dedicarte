@@ -19,3 +19,7 @@
 .header__nav {
 	padding-top: 2rem;
 }
+
+.main__esthetic__container > div {
+	width: 50%;
+}

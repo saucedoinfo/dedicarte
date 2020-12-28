@@ -179,7 +179,7 @@ header,
 	margin-bottom: 0;
 }
 
-/* :::::::::::::::::::::::::::main__esthetic:::::::::::::::::::::::::::: */
+/* :::::::::::::::::::::::::::main__esthetic y relax:::::::::::::::::::::::::::: */
 .main__esthetic,
 .main__relax {
 	width: 100%;
@@ -203,6 +203,7 @@ header,
 	border-top: 1px solid var(--bpurple);
 	height: 0;
 	width: 100%;
+	padding-bottom: 2rem;
 }
 
 .main__esthetic__title > h2,
@@ -213,7 +214,6 @@ header,
 }
 
 .main__relax > div {
-	width: 50%;
 	outline: 1px solid red;
 	padding: 1rem;
 	display: flex;
@@ -224,22 +224,65 @@ header,
 
 .main__esthetic__container {
 	display: flex;
+	justify-content: center;
+	align-items: flex-start;
 	flex-wrap: wrap;
 	width: 100%;
+	font-family: "Open Sans", sans-serif;
+	font-size: 1.5rem;
+	text-align: center;
 }
 
 .main__esthetic__container > div {
-	width: 50%;
-	outline: 1px solid red;
-	padding: 1rem;
-	display: flex;
-	justify-content: center;
-	gap: 1rem;
 	width: 100%;
+	padding: 2rem;
 	display: flex;
+	gap: 1rem;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
+}
+
+.main__esthetic__container {
+	text-align: center;
+}
+
+h3 {
+	color: var(--bpurple);
+}
+
+.main__esthetic__container > div > p {
+	color: var(--lpurple);
+}
+
+.main__esthetic__container__estetica_facial,
+.main__esthetic__container__limpieza,
+.main__esthetic__container__microdermoabrasion,
+.main__esthetic__container__electroestimulacion {
+	width: 120px;
+	height: 120px;
+	border-radius: 100px;
+}
+
+.main__esthetic__container__estetica_facial {
+	background: url(../img/Estetica_facial.jpg) no-repeat center center;
+	background-size: cover;
+}
+
+.main__esthetic__container__limpieza {
+	background: url(../img/Limpiezas_de_cutis_simple_y_profunda.jpg) no-repeat
+		center center;
+	background-size: cover;
+}
+
+.main__esthetic__container__microdermoabrasion {
+	background: url(../img/Microdermoabrasión.jpg) no-repeat center center;
+	background-size: cover;
+}
+
+.main__esthetic__container__electroestimulacion {
+	background: url(../img/Electroestimulacion.jpg) no-repeat center center;
+	background-size: cover;
 }
 
 /* :::::::::::::::::::::::: FOOTER :::::::::::::::::::::::::::::: */
