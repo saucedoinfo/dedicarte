@@ -18,13 +18,16 @@ html {
 	/* background-color: var(--cake); */
 }
 
-.container .header,
+.container,
+header,
+.header,
 .main,
 .main__philosophy,
 .footer {
-	/* width: 100vw; */
+	width: 100vw;
 	height: auto;
 	display: flex;
+	justify-content: center;
 	flex-wrap: wrap;
 }
 
@@ -35,7 +38,6 @@ html {
 .main__esthetic,
 .main__relax {
 	width: 100%;
-	/* min-width: 150px; */
 	height: 150px;
 }
 
@@ -44,44 +46,37 @@ html {
 	height: auto;
 }
 
+header,
 .header,
 .footer {
 	background-color: var(--cake);
 }
 
-.main__philosophy {
-	background-color: var(--lpurple);
-}
 .main__esthetic,
 .main__relax {
 	background-color: var(--white);
 }
-/* ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
-.line {
-	border-top: 1px solid var(--gray);
-	height: 2rem;
-	width: 100%;
-	padding: 0;
-	margin-bottom: 1rem;
-}
 
 /* ::::::::::::::::::::::: HEADER :::::::::::::::::::::::  */
+
+/* ::::::::::::::::::::::: HEADER LOGO:::::::::::::::::::::::  */
 .header__logo {
 	width: 100%;
 	height: auto;
 	display: flex;
+	flex-wrap: wrap;
 	justify-content: center;
 	align-items: center;
-	/* flex-wrap: wrap; */
 	flex-direction: column;
-	gap: 1rem;
-	height: auto;
 	padding: 2rem;
-	outline: blue 1px solid;
+	padding-bottom: 0;
 }
 
-.header__logo__img {
-	width: 180px;
+.header__logo__text__line,
+.header__logo__line {
+	border-top: 1px solid var(--gray);
+	width: 100%;
+	padding-bottom: 1rem;
 }
 
 .header__logo__text {
@@ -91,18 +86,21 @@ html {
 	flex-direction: column;
 }
 
-/* hr {
-	width: 18rem;
-	border-color: 1rem solid var(--gray);
-	margin-bottom: 1rem;
-} */
-.header__logo__dedicarte {
+.header__logo__text__dedicarte {
+	padding-top: 1.5rem;
 	font-family: "Parisienne", cursive;
 	font-size: 5rem;
 	color: var(--black);
 }
 
-.header__logoestetica_relax,
+.header__logo__line {
+	width: 80%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+/* ::::::::::::::::::::::: HEADER NAV:::::::::::::::::::::::  */
+.header__logo__text__estetica_relax,
 .header__nav,
 .main__esthetic__title > h2,
 .main__relax__title > h2 {
@@ -119,11 +117,7 @@ html {
 	padding-right: 2rem;
 }
 
-.header__nav__hr {
-	width: 100%;
-}
-
-ul {
+.header__nav__ul {
 	display: flex;
 	flex-wrap: wrap;
 }
@@ -137,11 +131,17 @@ ul {
 
 .header__nav li:hover {
 	background-color: var(--lpurple);
+	border-radius: 50px;
 	color: var(--white);
 }
 
 /* ::::::::::::::::::::::: MAIN :::::::::::::::::::::::  */
-.h1 {
+
+.main__philosophy {
+	background-color: var(--lpurple);
+}
+
+.main__philosophy__text__title {
 	font-size: 2.5rem;
 	padding: 2rem;
 }
@@ -282,74 +282,4 @@ ul {
 	align-items: center;
 	flex-wrap: nowrap;
 	/* gap: 1rem; */
-}
-
-/* ::::::::::::::::::::::::::::::::::: MEDIA  */
-@media (min-width: 600px) {
-	.header__logo {
-		flex-direction: row;
-		flex-wrap: wrap;
-		justify-content: flex-start;
-		align-items: center;
-		gap: 0;
-		margin: 0;
-		padding: 0;
-	}
-
-	.header__logo__img,
-	.header__logo__container,
-	.header__logo__dedicarte,
-	.line,
-	.header__logoestetica_relax {
-		transform: scale(0.75);
-	}
-	.line {
-		height: 0.1em;
-	}
-
-	.header__nav__hr {
-		display: none;
-	}
-
-	.header__nav {
-		display: flex;
-		justify-content: center;
-		align-items: ce;
-	}
-
-	.footer__logo {
-		justify-content: flex-end;
-	}
-	.main__esthetic__container > div {
-		width: 25%;
-	}
-
-	.footer__logo__container {
-		flex-wrap: wrap;
-	}
-	.header__logo__img {
-		width: 120px;
-	}
-	.header__logo__text {
-		justify-content: flex-end;
-		align-items: flex-end;
-	}
-}
-
-@media (min-width: 900px) {
-	.header__logo__text {
-		justify-content: flex-end;
-		align-items: flex-end;
-		gap: 0;
-		margin: 0;
-		padding: 0;
-		width: auto;
-	}
-	.container {
-		width: 1200px;
-		height: auto;
-		margin-right: auto;
-		margin-left: auto;
-		flex-wrap: nowrap;
-	}
 }

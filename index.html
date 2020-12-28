@@ -6,7 +6,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	<link rel="stylesheet" href="./css/normalize.css">
 	<link rel="stylesheet" href="./css/style.css" />
-	<link rel="stylesheet" href="./css/tablet.css" media="screen and (min-width: 600px)" />
+	<link rel="stylesheet" href="./css/tablet.css" media="screen and (min-width: 669px)" />
 	<link rel="stylesheet" href="./css/desktop.css" media="screen and (min-width: 800px)" />
 	<link rel="preconnect" href="https://fonts.gstatic.com">
 	<link href="https://fonts.googleapis.com/css2?family=Parisienne&display=swap" rel="stylesheet">
@@ -18,43 +18,47 @@
 </head>
 
 <body class="container">
-	<header class="header">
-		<div class="header__logo">
-			<picture><img src="./img/logo.svg" class="header__logo__img"
-					alt="Logo de la web Dedicarte"></picture>
-			<div class="header__logo__text">
-				<p class="header__logo__dedicarte">Dedicarte</p>
-				<div class="line"></div>
-				<p class="header__logoestetica_relax">Estética y relax</p>
+
+	<header>
+		<div class="header">
+			<div class="header__logo">
+				<picture class="header__logo__img">
+					<img src="./img/logo.svg" alt="Logo de la web Dedicarte">
+				</picture>
+				<div class="header__logo__text">
+					<p class="header__logo__text__dedicarte">Dedicarte</p>
+					<div class="header__logo__text__line"></div>
+					<p class="header__logo__text__estetica_relax">Estética y relax</p>
+				</div>
 			</div>
+			<div class="header__logo__line"></div>
+			<nav class="header__nav">
+				<ul class="header__nav__ul">
+					<li>Filosofia</li>
+					<li>Estética</li>
+					<li>Relax</li>
+					<li>Contacto</li>
+				</ul>
+			</nav>
 		</div>
-		<nav class="header__nav">
-			<hr class="header__nav__hr">
-			<ul>
-				<li>Filosofia</li>
-				<li>Estética</li>
-				<li>Relax</li>
-				<li>Contacto</li>
-			</ul>
-		</nav>
 	</header>
+
 	<main class="main">
+
 		<section class="main__philosophy">
-			<div class="main__philosophy__text">
-				<h1 class="h1">Belleza, salud, confort y bienestar en un solo lugar</h1>
-				<p>Dedicarte es un espacio pensado y creado para el cuidado de
-					la salud y la belleza de todos aquillas personas que saben que
-					el cuidado integral es la base para una mejor calidad de vida.
-				</p>
-			</div>
-			<div class="main__philosophy__turn">
-				<p>Estándares de calidad brindan confort y bienestar mediante
-					una creación personalizada con alto grado de responsabilidad
-					y compromiso profesional en cada tratamiento.
-				</p>
-				<button type="button" class="button">Solicitar turno</button>
-			</div>
+			<h1 class="main__philosophy__text__title">Belleza, salud, confort y bienestar en un solo lugar</h1>
+			<p>Dedicarte es un espacio pensado y creado para el cuidado de
+				la salud y la belleza de todos aquillas personas que saben que
+				el cuidado integral es la base para una mejor calidad de vida.
+			</p>
+			<p>Estándares de calidad brindan confort y bienestar mediante
+				una creación personalizada con alto grado de responsabilidad
+				y compromiso profesional en cada tratamiento.
+			</p>
+
+			<button type="button" class="button">Solicitar turno</button>
 		</section>
+
 		<section class="main__esthetic">
 			<section class="main__esthetic__title">
 				<span class="line"></span>
@@ -118,8 +122,7 @@
 	<footer class="footer">
 		<div class="footer__logo">
 			<div class="footer__logo__container">
-				<picture ><img src="./img/logo.svg" class="header__logo__img"
-						alt="Logo de la web Dedicarte"></picture>
+				<picture><img src="./img/logo.svg" class="header__logo__img" alt="Logo de la web Dedicarte"></picture>
 				<div class="header__logo__text">
 					<p class="header__logo__dedicarte">Dedicarte</p>
 					<div class="line"></div>

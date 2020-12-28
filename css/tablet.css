@@ -1,8 +1,25 @@
-.header__logo,
-.header__nav,
-.main__philosophy__text,
-.main__philosophy__turn,
-.footer__logo,
-.footer__contact {
-	width: 50%;
+header {
+	background-color: var(--cake);
+}
+
+.header {
+	flex-wrap: nowrap;
+	align-items: center;
+}
+
+.header__logo {
+	justify-content: flex-start;
+	flex-direction: row;
+}
+
+.header__logo__img {
+	padding-right: 2rem;
+}
+
+.header__logo__line {
+	display: none;
+}
+
+.header__nav {
+	padding-top: 2rem;
 }

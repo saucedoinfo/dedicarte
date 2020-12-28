@@ -1,15 +1,13 @@
-.container {
-	/* width: 800px; */
-	margin-left: auto;
-	margin-right: auto;
+/* .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} */
+
+.header {
+    min-width: 768px;
+	max-width: 1023px;
 }
 
-.header__logo,
-.header__nav,
-.main__philosophy__text,
-.main__philosophy__turn,
-.footer__logo,
-.footer__contact {
-	width: 50%;
-	height: auto;
-}
+
+min:768px - max:1023px
