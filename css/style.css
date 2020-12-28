@@ -219,16 +219,8 @@ header,
 	font-weight: 400;
 }
 
-.main__relax > div {
-	outline: 1px solid red;
-	padding: 1rem;
-	display: flex;
-	justify-content: center;
-	flex-wrap: wrap;
-	gap: 1rem;
-}
-
-.main__esthetic__container {
+.main__esthetic__container,
+.main__relax__container {
 	display: flex;
 	justify-content: center;
 	align-items: flex-start;
@@ -239,7 +231,8 @@ header,
 	text-align: center;
 }
 
-.main__esthetic__container > div {
+.main__esthetic__container > div,
+.main__relax__container > div {
 	width: 100%;
 	padding: 2rem;
 	display: flex;
@@ -249,7 +242,8 @@ header,
 	align-items: center;
 }
 
-.main__esthetic__container {
+.main__esthetic__container,
+.main__relax__container {
 	text-align: center;
 }
 
@@ -257,14 +251,19 @@ h3 {
 	color: var(--bpurple);
 }
 
-.main__esthetic__container > div > p {
+.main__esthetic__container > div > p,
+.main__relax__container > div > p {
 	color: var(--lpurple);
 }
 
 .main__esthetic__container__estetica_facial,
 .main__esthetic__container__limpieza,
 .main__esthetic__container__microdermoabrasion,
-.main__esthetic__container__electroestimulacion {
+.main__esthetic__container__electroestimulacion,
+.main__relax__container__masajes_reductores,
+.main__relax__container__descontracturantes,
+.main__relax__container__radiofrecuencia,
+.main__relax__container__drenaje_linfatico {
 	width: 120px;
 	height: 120px;
 	border-radius: 100px;
@@ -288,6 +287,26 @@ h3 {
 
 .main__esthetic__container__electroestimulacion {
 	background: url(../img/Electroestimulacion.jpg) no-repeat center center;
+	background-size: cover;
+}
+/* ... */
+.main__relax__container__masajes_reductores {
+	background: url(../img/masajes_reductores.png) no-repeat center center;
+	background-size: cover;
+}
+
+.main__relax__container__descontracturantes {
+	background: url(../img/descontracturantes.png) no-repeat center center;
+	background-size: cover;
+}
+
+.main__relax__container__radiofrecuencia {
+	background: url(../img/radiofrecuencia.png) no-repeat center center;
+	background-size: cover;
+}
+
+.main__relax__container__drenaje_linfatico {
+	background: url(../img/drenaje_linfatico.png) no-repeat center center;
 	background-size: cover;
 }
 
