@@ -104,7 +104,7 @@ header,
 	font-family: "Open Sans", sans-serif;
 	font-size: 2rem;
 	letter-spacing: 3px;
-	color: var(--lpurple);
+	color: var(--black);
 	padding-bottom: 2rem;
 	height: auto;
 }
@@ -182,7 +182,7 @@ header,
 	transition: all 0.5s;
 	cursor: pointer;
 	margin: 2rem;
-	margin-bottom: 0;
+	margin-bottom: 3rem;
 }
 
 /* :::::::::::::::::::::::::::main__esthetic y relax:::::::::::::::::::::::::::: */
@@ -314,32 +314,53 @@ h3 {
 .footer {
 	width: 100%;
 	gap: 0;
+	display: flex;
+	flex-wrap: wrap;
 }
 
 .footer__logo {
+	height: 75px;
+	width: 100%;
 	display: flex;
-	width: 50%;
-	/* height: 200px; */
-	outline: 1px solid red;
-	display: flex;
-	justify-content: flex-start;
-	align-items: flex-start;
-}
-.footer__contact {
-	width: 50%;
-	height: auto;
-	display: flex;
-	align-items: center;
 	justify-content: center;
-	gap: 0;
-	outline: 1px solid blue;
+	align-items: center;
 }
 
 .footer__logo__container {
-	/* transform: scale(0.5) translate(-40%, -20%); */
+	display: flex;
+	align-items: center;
+	transform: scale(0.5);
+	gap: 1rem;
+	flex-wrap: wrap;
+}
+
+.footer__contact {
+	width: 100%;
+	height: auto;
+	display: flex;
+	justify-content: center;
+}
+
+.footer__contact__container {
+	width: 100%;
+	height: auto;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: center;
+}
+
+.footer__contact__whatsapp,
+.footer__contact__instagram {
+	width: 100%;
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	flex-wrap: nowrap;
-	/* gap: 1rem; */
+	font-family: "Open Sans", sans-serif;
+	font-size: 2rem;
+	letter-spacing: 1px;
+	color: var(--bpurple);
+	padding: 1rem;
+	gap: 1rem;
+	/* font-weight: 600; */
 }

@@ -24,3 +24,8 @@
 .main__relax__container > div {
 	width: 50%;
 }
+
+.footer__logo,
+.footer__contact {
+	width: 50%;
+}

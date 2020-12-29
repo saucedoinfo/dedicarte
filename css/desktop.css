@@ -1,7 +1,8 @@
 .header,
 .main__philosophy,
 .main__esthetic,
-.main__relax {
+.main__relax,
+.footer {
 	min-width: 768px;
 	max-width: 1023px;
 }
@@ -14,7 +15,6 @@
 
 .main__philosophy__button {
 	margin: 3rem;
-	margin-bottom: 1rem;
 	font-size: 2.5rem;
 	width: auto;
 	height: auto;
@@ -29,4 +29,57 @@
 .main__esthetic__container > div,
 .main__relax__container > div {
 	width: 25%;
+}
+
+.footer__logo__container > .header__logo__text {
+	flex-direction: row;
+	align-items: flex-end;
+	gap: 2rem;
+}
+
+.footer__logo {
+	width: auto;
+	display: flex;
+	justify-content: flex-start;
+}
+
+.footer__logo__container > .header__logo__img {
+	width: 7.5rem;
+}
+
+.footer__logo__container
+	> .header__logo__text
+	> .header__logo__text__dedicarte {
+	padding: 0;
+}
+
+.footer__logo__container > .header__logo__text > .header__logo__text__line {
+	display: none;
+}
+
+.footer__logo__container
+	> .header__logo__text
+	> .header__logo__text__estetica_relax {
+	display: flex;
+	font-size: 2.5rem;
+}
+
+.footer__logo {
+	display: flex;
+	justify-content: flex-end;
+}
+
+.footer__contact__container {
+	display: flex;
+	flex-wrap: nowrap;
+}
+
+.footer__contact {
+	padding: 1rem;
+}
+
+.footer__logo {
+	display: flex;
+	justify-content: flex-start;
+	height: auto;
 }
