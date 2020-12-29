@@ -136,6 +136,9 @@ header,
 	color: var(--white);
 }
 
+a:hover {
+	color: var(--white);
+}
 /* ::::::::::::::::::::::: MAIN :::::::::::::::::::::::  */
 
 .main {
@@ -187,6 +190,12 @@ header,
 	cursor: pointer;
 	margin: 2rem;
 	margin-bottom: 3rem;
+}
+
+.main__philosophy__button:hover {
+	background-color: #f8467b;
+	border-radius: 50px;
+	color: var(--white);
 }
 
 .main__philosophy__button > a {
