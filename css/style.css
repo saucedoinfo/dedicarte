@@ -18,6 +18,10 @@ html {
 	/* background-color: var(--cake); */
 }
 
+a {
+	text-decoration: none;
+}
+
 .container,
 header,
 .main__philosofy__container,
@@ -183,6 +187,11 @@ header,
 	cursor: pointer;
 	margin: 2rem;
 	margin-bottom: 3rem;
+}
+
+.main__philosophy__button > a {
+	text-decoration: none;
+	color: var(--white);
 }
 
 /* :::::::::::::::::::::::::::main__esthetic y relax:::::::::::::::::::::::::::: */
@@ -362,5 +371,4 @@ h3 {
 	color: var(--bpurple);
 	padding: 1rem;
 	gap: 1rem;
-	/* font-weight: 600; */
 }
