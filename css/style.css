@@ -136,6 +136,16 @@ header,
 	color: var(--white);
 }
 
+a {
+	color: var(--bpurple);
+}
+a:visited {
+	color: var(--lpurple);
+}
+
+a:active {
+	color: #ffb6c1;
+}
 a:hover {
 	color: var(--white);
 }
@@ -380,4 +390,9 @@ h3 {
 	color: var(--bpurple);
 	padding: 1rem;
 	gap: 1rem;
+}
+
+.footer__contact__whatsapp > a:hover,
+.footer__contact__instagram > a:hover {
+	color: var(--bpurple);
 }
