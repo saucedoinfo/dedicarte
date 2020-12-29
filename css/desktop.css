@@ -83,3 +83,7 @@
 	justify-content: flex-start;
 	height: auto;
 }
+
+.btn-flotante {
+	right: 10%;
+}
