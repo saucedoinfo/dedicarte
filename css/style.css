@@ -6,6 +6,7 @@
 	--gray: #919192;
 	--cake: #fffcf8;
 	--pink: #e782a0;
+	--bpink: #f8467b;
 }
 
 * {
@@ -132,7 +133,7 @@ header,
 }
 
 .header__nav li:hover {
-	background-color: var(--lpurple);
+	background-color: var(--pink);
 	border-radius: 50px;
 	color: var(--white);
 }
@@ -159,12 +160,13 @@ a:hover {
 }
 
 .main__philosofy__container {
-	background-color: var(--lpurple);
+	background: rgb(159,72,131);
+	background: linear-gradient(0deg, rgba(159,72,131,1) 0%, rgba(122,86,117,1) 100%);
 	width: 100vw;
 }
 
 .main__philosophy {
-	background-color: var(--lpurple);
+	/* background-color: var(--lpurple); */
 	padding: 2rem;
 	background: url(../img/background.svg) no-repeat center bottom;
 	background-position: center -25%;
