@@ -352,6 +352,7 @@ h3 {
 	gap: 0;
 	display: flex;
 	flex-wrap: wrap;
+	border-top: 1px solid var(--gray);
 }
 
 .footer__logo {
