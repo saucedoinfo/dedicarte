@@ -196,8 +196,9 @@ a:hover {
 	color: #ffffff;
 	text-align: center;
 	font-family: "Open Sans", sans-serif;
+	font-weight: 550;
 	font-size: 2rem;
-	padding: 1rem;
+	padding: 1.5rem;
 	width: 200px;
 	transition: all 0.5s;
 	cursor: pointer;
