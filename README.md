@@ -1,6 +1,4 @@
-# dedicarte.ar
-
-## Mi primer proyecto Web.
+# dedicarte.ar | Mi primer proyecto Web.
 
 https://www.dedicarte.ar/
 
